@@ -1,0 +1,69 @@
+.root{
+    -fx-background-color: #111111;
+    -fx-font-family: sans-serif;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.label {
+    -fx-text-fill: #ACC5E2;
+    -fx-alignment: center;
+}
+
+.separator .line {
+    -fx-border-color: #475A8F;
+    -fx-border-width: 2;
+}
+
+.headTitle{
+    -fx-font-size: 40px;
+}
+
+/* INPUTS */
+
+Button { 
+    -fx-background-color: #475A8F;
+    -fx-text-fill: #DAC598;
+    -fx-background-radius: 10;
+    
+    -fx-transition: background-color 0.3s; /* no funciona */
+}
+.input {
+    -fx-background-color: #442B17;
+    -fx-prompt-text-fill: #598BC5;
+    -fx-text-fill: #ACC5E2;
+    -fx-background-radius: 10;
+    -fx-alignment: center;
+    
+    -fx-transition: background-color 0.3s; /* no funciona */
+}
+
+
+Button:hover {
+    -fx-background-color: #ACC5E2;
+    -fx-text-fill: #442B17;
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+    -fx-cursor: hand;
+}
+.input:hover {
+    -fx-background-color: #7C4E1C;
+    transition: -fx-background-color 0.5s ease; /* no funciona */
+}
+.labelButton:hover {
+    -fx-background-color: #7C4E1C;
+    -fx-background-radius: 10;
+    -fx-padding: 5 0 5 0;
+    -fx-cursor: hand;
+}
+
+.progress-bar > .bar {
+    -fx-background-color: linear-gradient(
+        from 0px .75em to .75em 0px,
+        repeat,
+        -fx-accent 0%,
+        -fx-accent 49%,
+        derive(-fx-accent, 30%) 50%,
+        derive(-fx-accent, 30%) 99%
+    );
+}

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="576.0" prefWidth="1024.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.crear_admin_controller">
+    <stylesheets>
+        <URL value="@../styles/general_style.css" />
+    </stylesheets>
+   <children>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="1024.0" spacing="50.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label styleClass="headTitle" text="Crea l'usuari administrador" />
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="300.0" prefWidth="300.0" spacing="50.0">
+                     <children>
+                        <TextField fx:id="inputUsername" alignment="CENTER" promptText="nom d'usuari" styleClass="input" text="admin" />
+                        <PasswordField fx:id="inputPassword1" alignment="CENTER" promptText="contrassenya" styleClass="input" />
+                        <PasswordField fx:id="inputPassword2" alignment="CENTER" promptText="repeteix la contrassenya" styleClass="input" />
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#createNewAdmin" prefHeight="37.0" prefWidth="429.0" text="CREA" />
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </VBox>
+                  <Separator orientation="VERTICAL" prefHeight="200.0" />
+                  <ImageView cache="true" fitHeight="300.0" fitWidth="300.0" pickOnBounds="true" smooth="false">
+                     <image>
+                        <Image url="@../images/icon.png" />
+                     </image>
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

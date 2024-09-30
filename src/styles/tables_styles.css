@@ -1,0 +1,95 @@
+/* Styling the TableView */
+.table-view {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #22160C;
+}
+
+
+/* Styling the corner of the header section */
+.table-view .column-header-background .filler {
+    -fx-background-color: transparent;
+    -fx-text-fill: #22160C;
+}
+
+/* Styling the bottom right corner between the scrollbars */
+.table-view .corner {
+    -fx-background-color: transparent;
+}
+
+/* Styling the Global header background */
+.table-view .column-header-background {
+    -fx-background-color: linear-gradient(to bottom, #DAC598, #B48B31);
+    -fx-background-radius: 7px 7px 0px 0px;
+}
+
+/* Styling individual Column Headers */
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+/* Styling Cells and Rows */
+.table-view .table-cell {
+    -fx-border-color: transparent;
+    -fx-padding: 2 0 2 10px;
+}
+
+/* Styling hover effect on rows */
+.table-row-cell:hover {
+    -fx-text-background-color: #B48B31; /* Changing hover color to daurat - clar */
+}
+
+/* Styling odd rows */
+.table-row-cell:odd {
+    -fx-background-color: #ACC5E2;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+
+/* Styling even rows */
+.table-row-cell:even {
+    -fx-background-color: #598BC5;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+
+/* Styling Scrollbars */
+.table-view .virtual-flow .scroll-bar:vertical,
+.table-view .virtual-flow .scroll-bar:vertical .track,
+.table-view .virtual-flow .scroll-bar:vertical .track-background,
+.table-view .virtual-flow .scroll-bar:horizontal,
+.table-view .virtual-flow .scroll-bar:horizontal .track,
+.table-view .virtual-flow .scroll-bar:horizontal .track-background {
+    -fx-background-color: transparent;
+}
+
+/* Styling scrollbar buttons */
+.table-view .virtual-flow .scroll-bar .increment-button,
+.table-view .virtual-flow .scroll-bar .decrement-button {
+    -fx-opacity: 0;
+    -fx-padding: 2;
+}
+
+/* Styling scrollbar thumb */
+.table-view .virtual-flow .scroll-bar:vertical .thumb {
+    -fx-background-color:  linear-gradient(to bottom, #DAC598, #B48B31);
+}
+
+.table-view .virtual-flow .scroll-bar:horizontal .thumb {
+    -fx-background-color:  linear-gradient(to right, #DAC598, #B48B31);
+}
+
+/* Styling value-specific highlighting */
+.table-row-cell:highlighted {
+    -fx-background-color: #B48B31;
+    -fx-background-radius: 15px;
+}
+
+.noheader .column-header-background {
+    -fx-max-height: 0;
+    -fx-pref-height: 0;
+    -fx-min-height: 0;
+}
+
