@@ -11,7 +11,7 @@ En aquest projecte hem fet una aplicació que:
 7. Mostra les cartes filtrades
 
 <h2>Usuari</h2>
-![image](https://github.com/user-attachments/assets/9f4a5713-9082-4fcf-8fbc-e374b57733d9)
+<img src="https://github.com/user-attachments/assets/9f4a5713-9082-4fcf-8fbc-e374b57733d9" >
 
 <h2>Administrador</h2>
-![image](https://github.com/user-attachments/assets/472ba1ec-250e-4e6c-8c7f-7664ca90c9d8)
+<img src="https://github.com/user-attachments/assets/472ba1ec-250e-4e6c-8c7f-7664ca90c9d8" >
